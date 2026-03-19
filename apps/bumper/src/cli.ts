@@ -42,7 +42,7 @@ program
       }
 
       try {
-        bump({
+        const result = bump({
           type: bumpType as BumpType,
           dryRun: opts.dryRun,
           tagPrefix: opts.tagPrefix,
@@ -52,7 +52,7 @@ program
         if (!opts.dryRun) {
           const answer = await ask("Push? (y/N) ")
           if (answer === "y") {
-            gitPush(opts.cwd)
+            gitPush(opts.cwd, result.tagName)
             console.log("Pushed.")
           }
         }

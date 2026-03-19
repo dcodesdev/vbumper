@@ -66,8 +66,8 @@ export function gitTag(cwd: string, tagName: string): void {
   execSync(`git tag ${tagName}`, { cwd, stdio: "pipe" })
 }
 
-export function gitPush(cwd: string): void {
-  execSync(`git push --follow-tags`, { cwd, stdio: "pipe" })
+export function gitPush(cwd: string, tagName: string): void {
+  execSync(`git push origin ${tagName}`, { cwd, stdio: "pipe" })
 }
 
 export function bump(options: BumpOptions): BumpResult {
