@@ -11,7 +11,6 @@
   ],
   "scripts": {
     "build": "bun build ./src/cli.ts --outdir ./dist --target node --banner '#!/usr/bin/env node'",
-    "publish": "bun run build && npm publish",
     "dev": "bun run ./src/cli.ts",
     "typecheck": "tsgo --noEmit",
     "test": "vitest run"
