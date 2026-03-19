@@ -1,6 +1,6 @@
 {
   "name": "vbumper",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A CLI that bumps project versions, creates git commits and tags",
   "type": "module",
   "bin": {
@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun build ./src/cli.ts --outdir ./dist --target node",
+    "build": "bun build ./src/cli.ts --outdir ./dist --target node --banner '#!/usr/bin/env node'",
     "publish": "bun run build && npm publish",
     "dev": "bun run ./src/cli.ts",
     "typecheck": "tsgo --noEmit",
