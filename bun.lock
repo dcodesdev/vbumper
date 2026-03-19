@@ -19,15 +19,15 @@
     },
     "apps/bumper": {
       "name": "vbumper",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "bin": {
         "vbumper": "./dist/cli.js",
       },
       "dependencies": {
-        "@bumper/core": "workspace:*",
         "commander": "^14.0.3",
       },
       "devDependencies": {
+        "@bumper/core": "workspace:*",
         "@types/node": "^25.5.0",
       },
     },
