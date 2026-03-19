@@ -1,10 +1,10 @@
 {
-  "name": "verbump",
-  "version": "0.0.1",
+  "name": "vbumper",
+  "version": "0.1.0",
   "description": "A CLI that bumps project versions, creates git commits and tags",
   "type": "module",
   "bin": {
-    "verbump": "./dist/cli.js"
+    "vbumper": "./dist/cli.js"
   },
   "files": [
     "dist"

@@ -6,7 +6,7 @@ import type { BumpType } from "@bumper/core"
 const program = new Command()
 
 program
-  .name("verbump")
+  .name("vbumper")
   .description("Bump project versions, create git commits and tags")
   .argument("<type>", "bump type: major, minor, or patch")
   .option("--dry-run", "preview changes without modifying anything", false)
