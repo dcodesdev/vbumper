@@ -22,6 +22,11 @@
     "semver",
     "cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcodesdev/vbumper",
+    "directory": "apps/vbumper"
+  },
   "license": "MIT",
   "dependencies": {
     "commander": "^14.0.3"
