@@ -1,6 +1,6 @@
 {
   "name": "vbumper",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "A CLI that bumps project versions, creates git commits and tags",
   "type": "module",
   "bin": {
