@@ -1,0 +1,32 @@
+{
+  "name": "verbump",
+  "version": "0.0.1",
+  "description": "A CLI that bumps project versions, creates git commits and tags",
+  "type": "module",
+  "bin": {
+    "verbump": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun build ./src/cli.ts --outdir ./dist --target node",
+    "dev": "bun run ./src/cli.ts",
+    "typecheck": "tsgo --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "version",
+    "bump",
+    "semver",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@bumper/core": "workspace:*",
+    "commander": "^14.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0"
+  }
+}

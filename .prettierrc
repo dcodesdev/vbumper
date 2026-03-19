@@ -1,0 +1,9 @@
+{
+  "singleQuote": false,
+  "trailingComma": "none",
+  "semi": false,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": ["^[a-zA-Z]", "^@[a-zA-Z]", "^@/", "^\\."],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

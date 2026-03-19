@@ -39,7 +39,7 @@ RUN npm install -g yarn pnpm
 
 # Install Rust
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-ENV PATH="/home/ubuntu/.cargo/bin:${PATH}"
+ENV PATH="/root/.cargo/bin:${PATH}"
 
 # Install Node.js if not already present (needed for npx/playwright)
 RUN which node || (curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
