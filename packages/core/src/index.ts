@@ -66,6 +66,10 @@ export function gitTag(cwd: string, tagName: string): void {
   execSync(`git tag ${tagName}`, { cwd, stdio: "pipe" })
 }
 
+export function gitPush(cwd: string): void {
+  execSync(`git push --follow-tags`, { cwd, stdio: "pipe" })
+}
+
 export function bump(options: BumpOptions): BumpResult {
   const cwd = options.cwd ?? process.cwd()
   const prefix = options.tagPrefix ?? "v"

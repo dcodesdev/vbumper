@@ -1,16 +1,17 @@
 {
-  "name": "verbump",
-  "version": "0.0.1",
+  "name": "vbumper",
+  "version": "0.1.5",
   "description": "A CLI that bumps project versions, creates git commits and tags",
   "type": "module",
   "bin": {
-    "verbump": "./dist/cli.js"
+    "vbumper": "./dist/cli.js"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "bun build ./src/cli.ts --outdir ./dist --target node",
+    "build": "bun build ./src/cli.ts --outdir ./dist --target node --banner '#!/usr/bin/env node'",
+    "publish": "bun run build && npm publish",
     "dev": "bun run ./src/cli.ts",
     "typecheck": "tsgo --noEmit",
     "test": "vitest run"
@@ -23,10 +24,10 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@bumper/core": "workspace:*",
     "commander": "^14.0.3"
   },
   "devDependencies": {
+    "@bumper/core": "workspace:*",
     "@types/node": "^25.5.0"
   }
 }
